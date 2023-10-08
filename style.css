@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.conteudo {
+    display: flex;
+    width: 600px;
+    height: 448px;
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    border-radius: 2%;
+    margin: 22vh auto;    
+  
+}
+
+.imagem_desktop {
+    width: 300px;    
+}
+
+.imagem_mobile {
+    display: none;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    height: 450px;
+    
+        
+}
+
+span {
+    color: hsl(228, 12%, 48%);
+    font-size: 0.75rem;
+    letter-spacing: 0.3rem;  
+    
+    
+}
+
+h1 {
+    margin-top: auto;
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    
+}
+
+p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: auto;
+    line-height: 1.6;
+    color: hsl(228, 12%, 48%)
+
+}
+.precos {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: auto;
+    gap: 20px;
+}
+
+h2 {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+}
+.preco_2 {
+    
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    margin: 0;
+    
+
+}
+
+.botao_carrinho{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 16px;
+    border-radius: 8px;
+    letter-spacing: 0.03rem;    
+}
+
+.botao_carrinho:hover{
+    background-color: #1a4031;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;    
+ }
+
+ .attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+ 
+ 
+@media only screen and (max-width: 600px) {
+
+    .imagem_desktop {
+        display: none;
+
+    }
+
+    .imagem_mobile {
+       display: block;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        height: 610px;
+        width: 345px;
+        margin: 15% auto;
+    }
+
+    .botao_carrinho {
+        margin-top: 10px;
+
+    }
+
+ }
